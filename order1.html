@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Orders - Galvanize Delivers</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body class="cyan darken-1">
+    <nav class="indigo darken-2" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo white-text">Galvanize Delivers</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="white-text" href="#">Order Delivery</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Orders</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+
+
+    <main>
+
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <!-- <div class="section no-pad-bot"> -->
+                <div class="container">
+                    <!-- <br><br> -->
+                    <h3 class="header black-text text-darken-2">Menu</h3>
+
+                    <!-- <br><br> -->
+                </div>
+                <!-- </div> -->
+
+                <div class="row">
+                    <div class="col s12 m12 l6">
+                        <div class="card indigo darken-1">
+                            <div class="card-image">
+                                <img src="img/krabby.jpg">
+                                <!-- <span class="card-title black-text">Royal With Cheese</span> -->
+                            </div>
+                            <div class="card-content">
+                                <h5> Krabby Patty </h5>
+                                <p>$8.99</p>
+                            </div>
+                            <div class="card-action addToOrder red darken-1">
+                                <a href="#">ADD TO ORDER</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m12 l6">
+                        <div class="card indigo darken-1">
+                            <div class="card-image">
+                                <img src="img/pho.jpg">
+                                <!-- <span class="card-title black-text">Arugala Pie</span> -->
+                            </div>
+                            <div class="card-content">
+                                <h5> Pho Real </h5>
+                                <p>$11.99</p>
+                            </div>
+                            <div class="card-action addToOrder red darken-1">
+                                <a href="#">ADD TO ORDER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col s12 m12 l6">
+                        <div class="card indigo darken-1">
+                            <div class="card-image">
+                                <img src="img/donut.jpg">
+                                <!-- <span class="card-title black-text">Royal With Cheese</span> -->
+                            </div>
+                            <div class="card-content">
+                                <h5> Drooler Crueller </h5>
+                                <p>$4.99</p>
+                            </div>
+                            <div class="card-action addToOrder red darken-1">
+                                <a href="#">ADD TO ORDER</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m12 l6">
+                        <div class="card indigo darken-1">
+                            <div class="card-image">
+                                <img src="img/cake.jpg">
+                                <!-- <span class="card-title black-text">Royal With Cheese</span> -->
+                            </div>
+                            <div class="card-content">
+                                <h5> Fake Cake </h5>
+                                <p>$14.99</p>
+                            </div>
+                            <div class="card-action addToOrder red darken-1">
+                                <a href="#">ADD TO ORDER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col s12 m5">
+                    <h3 class="header black-text text-darken-2">Order</h3>
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="right-align">Price</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableBody">
+                            <tr id="tableRow"></tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td class="right-align ">Subtotal</td>
+                                <td class="right-align" id="subtotal"></td>
+                            </tr>
+                            <tr>
+                                <td class="right-align">Tax</td>
+                                <td class="right-align" id="tax"></td>
+                            </tr>
+                            <tr>
+                                <td class="right-align">Total</td>
+                                <td class="right-align" id="total"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+
+                    <head>
+                        <title>Input Form</title>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                    </head>
+
+                    <div class="container">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix brown-text text-darken-2">shopping_cart</i>
+                                        <input placeholder="First Name" value="" id="name" type="text" class="active validate" required>
+                                        <label for="name">First Name</label>
+                                    </div>
+
+                                    <div class="input-field col s6">
+                                        <input placeholder="Last Name" value="" id="lastName" type="text" class="active validate" required>
+                                        <label for="name">Last Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Email" id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix brown-text text-darken-2">mode_edit</i>
+                                        <textarea id="address" type="address" placeholder="Address" class="materialize-textarea"></textarea>
+                                        <label for="address">Address</label>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="section"> </div>
+
+                                    <div class="row center ">
+                                        <a href="index.html" id="download-button" class="btn-large waves-effect waves-light red darken-1 black-text">PLACE AN ORDER</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="indigo darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <br><br>
+                    <h5 class="white-text">Galvanize Delivers</h5>
+                    <p class="white-text text-darken-4">Fine Dining, Delivered.</p>
+                </div>
+
+
+                <div class="col l3 s12">
+                    <br><br>
+                    <ul>
+                        <li><a class="white-text" href="index.html">Home</a></li>
+                        <li><a class="white-text" href="order1.html">Order Delivery</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright indigo darken-3">
+            <div class="container white-text">
+                &copy; 2017 Galvanize Delivers
+                <a class="white-text"></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
