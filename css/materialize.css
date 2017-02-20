@@ -3,6 +3,12 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+.fixed-position {
+  position: fixed;
+  right: 0px;
+  height: 80%
+}
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
