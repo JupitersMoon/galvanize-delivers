@@ -192,34 +192,34 @@
                                     <div class="input-field col s6">
                                         <i class="material-icons prefix brown-text text-darken-2">shopping_cart</i>
                                         <input placeholder="First Name" value="" id="name" type="text" class="active validate" required>
-                                        <label for="name">First Name</label>
+                                        <label data-error="required, needs work" for="name">First Name</label>
                                     </div>
 
                                     <div class="input-field col s6">
                                         <input placeholder="Last Name" value="" id="lastName" type="text" class="active validate" required>
-                                        <label for="name">Last Name</label>
+                                        <label data-error="required, needs work" for="name">Last Name</label>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="Email" id="email" type="email" class="validate">
-                                        <label for="email">Email</label>
+                                        <input placeholder="Email" id="email" type="email" class="validate" required>
+                                        <label data-error="required" for="email">Email</label>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <i class="material-icons prefix brown-text text-darken-2">mode_edit</i>
-                                        <textarea id="address" type="address" placeholder="Address" class="materialize-textarea"></textarea>
-                                        <label for="address">Address</label>
+                                        <textarea id="address" type="address" placeholder="Address" class="materialize-textarea validate" required></textarea>
+                                        <label data-error="required, needs work" for="address">Address</label>
                                     </div>
                                 </div>
                                 <div class="container">
                                     <div class="section"> </div>
 
-                                    <div class="row center ">
-                                        <a href="index.html" id="download-button" class="btn-large waves-effect waves-light red darken-1 black-text">READY FOR LAUNCH</a>
+                                    <div class="row center">
+                                        <a href="index.html" id="download-button" class="btn-large waves-effect waves-light red darken-1 black-text placeOrder">READY FOR LAUNCH</a>
                                     </div>
                                 </div>
                             </form>
@@ -245,7 +245,7 @@
                     <br><br>
                     <ul>
                         <li><a class="white-text" href="index.html">Home</a></li>
-                        <li><a class="white-text" href="order1.html">Order Delivery</a></li>
+                        <li><a class="white-text reloadOrder" href="order1.html">Order Delivery</a></li>
 
                     </ul>
                 </div>

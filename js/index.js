@@ -14,9 +14,25 @@ $(document).ready(function() {
     })
 
     function fillTable() {
-      subTotal += Number($(event.target).parent().parent().find('p').text().slice(1)) // .replace(/[^0-9\.]+/g, "")
-      //console.log('subtotal: ' + subTotal);
-      return subTotal
+        subTotal += Number($(event.target).parent().parent().find('p').text().slice(1)) // .replace(/[^0-9\.]+/g, "")
+        //console.log('subtotal: ' + subTotal);
+        return subTotal
     }
 
+// TOAST
+    $('.placeOrder').click(function toast() {
+
+      var nameInput = $("#name").val()
+      var lastNameInput = $("#lastName").val()
+      var emailInput = $("#email").val()
+      var addressInput = $("#address").val()
+            // console.log(nameInput);
+
+        if (subTotal > 0 && nameInput.length > 0 && lastNameInput.length > 0 && emailInput.length > 0 && addressInput.length > 0 && emailInput.includes('@')==true && emailInput.includes('.')==true) {
+            alert('BLAST OFF!!! Your tasty food is on its way!')
+        } else {
+            alert('Mission Scrubbed: Please choose an item and complete all requested fields.')
+            event.preventDefault() // stay on page
+        }
+    })
 })
